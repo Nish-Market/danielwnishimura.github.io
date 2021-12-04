@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {
+<!--This is where I set the background color and font that I wanted to use across my entire page-->
+  font-family: tahoma;
+  background-color: #000000;
+  margin: 0;
+}
+
+header {
+<!--This is the layout for the header content-->
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 32px;
+  margin: 0px;
+  padding: 20px;
+  background-color: #25553E;
+  text-align: center;
+  line-height: 0.4;
+  color: white;
+  border-bottom-style: solid;
+  border-width: 15px;
+  border-color: #A67948;
+}
+
+
+content {
+<!--This is the layout for the main body content-->
+  white-space: nowrap;
+  overflow: hidden;
+  color: #FFFFFF;
+  padding-left: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.icon-bar {
+<!--This the icon bar that liks to my other pages-->
+  width: 100%;
+  background-color: #25553E;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #A67948;
+}
+
+.active {
+  background-color: #000000;
+}
+
+.container {
+  position: relative;
+  color: white;
+}
+
+.center {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+img {
+  filter: drop-shadow(8px 8px 10px white);
+  filter: opacity(30%);
+  border-radius: 50%;
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<!--This is the content for my header-->
+<header>
+  <h1>Daniel Nishimura</h1>
+  <p>Bio</p>
+</header>
+
+<!--These are the icon links to my other pages-->
+<div class="icon-bar">
+  <a href="index.html"><i class="fa fa-home"></i></a> 
+  <a class="active" href="bio.html"><i class="fa fa-user"></i></a> 
+  <a href="portfolio.html"><i class="fa fa-volume-up"></i></a> 
+  <a href="contact.html"><i class="fa fa-envelope"></i></a> 
+</div>
+
+<content>
+<div class="container">
+  <img src="profile.png" width="700" height="700">
+  <div class="center" style="max-width: 700px; min-width:700px;">Here I am! Back in school pursuing a new career path after the pandemic crippled the live envent industry.
+I figured graphic design would be a more stable alternative while still letting me be creative.
+I've been having fun so far, but I will admit that I was dreading this web design class, as there are few things I hate more than coding.
+It's big reason why I gave up on engineering my freshman year of college. However, regardless of my personal feelings, it is an important skill to have in today's job market.
+I also needed to update my portfolio anyway, so why not kill two birds with one stone?</div>
+</div>
+</content>
+
+</body>
+
+</html>

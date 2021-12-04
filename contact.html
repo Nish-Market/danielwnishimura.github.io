@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {
+<!--This is where I set the background color and font that I wanted to use across my entire page-->
+  font-family: tahoma;
+  background-color: #000000;
+  margin: 0;
+}
+
+header {
+<!--This is the layout for the header content-->
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 32px;
+  margin: 0px;
+  padding: 20px;
+  background-color: #25553E;
+  text-align: center;
+  line-height: 0.4;
+  color: white;
+  border-bottom-style: solid;
+  border-width: 15px;
+  border-color: #A67948;
+}
+
+
+content {
+<!--This is the layout for the main body content-->
+  white-space: nowrap;
+  overflow: hidden;
+  color: #FFFFFF;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.icon-bar {
+<!--This the icon bar that liks to my other pages-->
+  width: 100%;
+  background-color: #25553E;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #A67948;
+}
+
+.active {
+  background-color: #000000;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!--This is the content for my header-->
+<header>
+  <h1>Daniel Nishimura</h1>
+  <p>Contact</p>
+</header>
+
+<!--These are the icon links to my other pages-->
+<div class="icon-bar">
+  <a href="index.html"><i class="fa fa-home"></i></a> 
+  <a href="bio.html"><i class="fa fa-user"></i></a> 
+  <a href="portfolio.html"><i class="fa fa-volume-up"></i></a> 
+  <a class="active" href="contact.html"><i class="fa fa-envelope"></i></a> 
+</div>
+
+<!--Here is where created the fillable form feild for contacting me-->
+<content>
+ <form action="submit.html" method="post" target="_self"><br>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="30" value="First"><br><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" size="30" value="Last"><br><br>
+  <label for="email">E-mail:</label><br>
+  <input type="email" id="email" name="email" size="50" value="email@example.com"><br><br>
+  <label for="message">Message:</label><br>
+  <input type="text" id="message" name="message" size="50" value="Additional information"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+</content>
+
+
+</body>
+
+</html>
