@@ -98,11 +98,11 @@ img {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .center {
     font-size: 14px;
-	max-width: 400px;
-	min-width: 400px;
+	max-width: 100%;
+	min-width: 100%;
   }
 }
 
