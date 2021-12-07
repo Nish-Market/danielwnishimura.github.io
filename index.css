@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/*This is where I set the background color and font that I wanted to use across my entire page*/
+body {
+  font-family: tahoma;
+  background-color: #000000;
+  margin: 0;
+}
+
+/*This is the layout for the header content*/
+header {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 32px;
+  margin: 0px;
+  padding: 20px;
+  background-color: #25553E;
+  text-align: center;
+  line-height: 0.4;
+  color: white;
+  border-bottom-style: solid;
+  border-width: 15px;
+  border-color: #A67948;
+}
+
+/*This the icon bar that liks to my other pages*/
+.icon-bar {
+  width: 100%;
+  background-color: #25553E;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #A67948;
+}
+
+.active {
+  background-color: #000000;
+}
+
+/*This is where I set the background color and font that I wanted to use across my entire page*/
+body {
+  font-family: tahoma;
+  background-color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+/*This is the layout for the main body content*/
+content {
+  color: #FFFFFF;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  color: white;
+}
+
+.center {
+  position: absolute;
+  white-space: wrap;
+  bottom: 8px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+img {
+  filter: drop-shadow(8px 8px 10px white);
+  filter: opacity(30%);
+  border-radius: 50%;
+}
+
+/*This portfolio grid layout*/
+.main {
+  max-width: 2000px;
+  margin: auto;
+}
+
+.row {
+  margin: auto;
+}
+
+.row,
+.row > .column {
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: #A67948;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*Here is a buch of code I found to create animations. It was made way back in 2011 by github user Aniket Pant*/
+@-webkit-keyframes move1 {
+  0% { height: 50px; }
+  25% { height: 200px; }
+  75% { height: 150px; }
+  100% { height: 50px; }
+}
+
+@-webkit-keyframes move2 {
+  0% { height: 25px; }
+  25% { height: 125px; }
+  75% { height: 200px; }
+  100% { height: 25px; }
+}
+
+@-webkit-keyframes move3 {
+  0% { height: 75px; }
+  25% { height: 25px; }
+  75% { height: 200px; }
+  100% { height: 75px; }
+}
+
+@-webkit-keyframes move4 {
+  0% { height: 0px; }
+  25% { height: 100px; }
+  75% { height: 250px; }
+  100% { height: 0px; }
+}
+
+@-webkit-keyframes move5 {
+  0% { height: 125px; }
+  25% { height: 50px; }
+  75% { height: 225px; }
+  100% { height: 125px; }
+}
+
+@-webkit-keyframes move1 {
+  0% { height: 50px; }
+  25% { height: 200px; }
+  75% { height: 150px; }
+  100% { height: 50px; }
+}
+
+@-webkit-keyframes move2 {
+  0% { height: 25px; }
+  25% { height: 125px; }
+  75% { height: 200px; }
+  100% { height: 25px; }
+}
+
+@-webkit-keyframes move3 {
+  0% { height: 75px; }
+  25% { height: 25px; }
+  75% { height: 200px; }
+  100% { height: 75px; }
+}
+
+@-webkit-keyframes move4 {
+  0% { height: 0px; }
+  25% { height: 100px; }
+  75% { height: 250px; }
+  100% { height: 0px; }
+}
+
+@-webkit-keyframes move5 {
+  0% { height: 125px; }
+  25% { height: 50px; }
+  75% { height: 225px; }
+  100% { height: 125px; }
+}
+
+#equalizer {
+  white-space: nowrap;
+  overflow: hidden;
+  float: center;
+  display: block;
+  height: 100%;
+  text-align: center;
+  -moz-animation: flicker 1s infinite ease-in-out;
+  -webkit-animation: flicker 1s infinite ease-in-out;
+}
+
+.bars {
+  list-style: none;
+}
+
+.bars li {
+  display: inline-block;
+  width: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: inset 0px 0px 2px #ddd;
+}
+
+.bars:first-child {
+  margin-left: 0;
+}
+
+.bars:last-child {
+  margin-right: 0;
+}
+
+.bar1 {
+  height: 100px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+    );
+  background-image: -moz-linear-gradient(
+    left center,
+     #F3F3F3 2%,
+    #FFFFFF 50%
+    );
+  -moz-animation: move1 infinite 3.6s linear;
+  -webkit-animation: move1 infinite 3.6s linear;
+}
+
+.bar2 {
+  height: 200px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move2 infinite 2.7s linear;
+  -webkit-animation: move2 infinite 2.7s linear;
+}
+
+.bar3 {
+  height: 11px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move3 infinite 3.2s linear;
+  -webkit-animation: move3 infinite 3.2s linear;
+}
+
+.bar4 {
+  height: 80px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move4 infinite 2.5s linear;
+  -webkit-animation: move4 infinite 2.5s linear;
+}
+
+.bar5 {
+  height: 40px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move5 infinite 3s linear;
+  -webkit-animation: move5 infinite 3s linear;
+}
+
+.bar6 {
+  height: 55px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+    );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+    );
+  -moz-animation: move1 infinite 2.9s linear;
+  -webkit-animation: move1 infinite 2.9s linear;
+}
+
+.bar7 {
+  height: 200px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move2 infinite 2.4s linear;
+  -webkit-animation: move2 infinite 2.4s linear;
+}
+
+.bar8 {
+  height: 130px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move3 infinite 3.1s linear;
+  -webkit-animation: move3 infinite 3.1s linear;
+}
+
+.bar9 {
+  height: 100px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move4 infinite 2.8s linear;
+  -webkit-animation: move4 infinite 2.8s linear;
+}
+
+.bar10 {
+  height: 90px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move5 infinite 3.3s linear;
+  -webkit-animation: move5 infinite 3.3s linear;
+}
+
+.bar11 {
+  height: 80px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+    );
+  background-image: -moz-linear-gradient(
+    left center,
+     #F3F3F3 2%,
+    #FFFFFF 50%
+    );
+  -moz-animation: move1 infinite 2.6s linear;
+  -webkit-animation: move1 infinite 2.6s linear;
+}
+
+.bar12 {
+  height: 190px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move2 infinite 2.8s linear;
+  -webkit-animation: move2 infinite 2.8s linear;
+}
+
+.bar13 {
+  height: 110px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move3 infinite 3.4s linear;
+  -webkit-animation: move3 infinite 3.4s linear;
+}
+
+.bar14 {
+  height: 45px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move4 infinite 3s linear;
+  -webkit-animation: move4 infinite 3s linear;
+}
+
+.bar15 {
+  height: 60px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move5 infinite 2.9s linear;
+  -webkit-animation: move5 infinite 2.9s linear;
+}
+
+.bar16 {
+  height: 150px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+    );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+    );
+  -moz-animation: move1 infinite 2.7s linear;
+  -webkit-animation: move1 infinite 2.7s linear;
+}
+
+.bar17 {
+  height: 180px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move2 infinite 3s linear;
+  -webkit-animation: move2 infinite 3s linear;
+}
+
+.bar18 {
+  height: 140px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move3 infinite 3.2s linear;
+  -webkit-animation: move3 infinite 3.2s linear;
+}
+
+.bar19 {
+  height: 70px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move4 infinite 2.8s linear;
+  -webkit-animation: move4 infinite 2.8s linear;
+}
+
+.bar20 {
+  height: 55px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.02, #F3F3F3),
+    color-stop(0.5, #FFFFFF)
+  );
+  background-image: -moz-linear-gradient(
+    left center,
+    #F3F3F3 2%,
+    #FFFFFF 50%
+  );
+  -moz-animation: move5 infinite 3.4s linear;
+  -webkit-animation: move5 infinite 3.4s linear;
+}
+
+.hidden {
+  height: 300px;
+  box-shadow: none !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+
+</style>
+</head>
