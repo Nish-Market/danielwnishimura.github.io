@@ -67,6 +67,7 @@ content {
   color: #FFFFFF;
   padding-left: 20px;
   text-align: center;
+  padding: 10px;
 }
  
 /*This is the formatting for my bio and photo*/
@@ -84,6 +85,7 @@ content {
   font-size: 20px;
   max-width: 700px;
   min-width: 700px;
+  padding: 10px;
 }
 
 img {
@@ -92,13 +94,13 @@ img {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   img {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .center {
     font-size: 14px;
 	max-width: 100%;
