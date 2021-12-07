@@ -62,7 +62,6 @@ body {
   text-align: center;
 }
 
-
 /*This is the layout for the main body content*/
 content {
   color: #FFFFFF;
@@ -83,12 +82,28 @@ content {
   left: 50%;
   transform: translate(-50%, 0%);
   font-size: 20px;
+  max-width: 700px;
+  min-width: 700px;
 }
 
 img {
   filter: drop-shadow(8px 8px 10px white);
   filter: opacity(30%);
   border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .center {
+    font-size: 14px;
+	max-width: 400px;
+	min-width: 400px;
+  }
 }
 
 /*This is the portfolio grid layout*/
@@ -124,13 +139,13 @@ img {
 
 @media screen and (max-width: 900px) {
   .column {
-    width: 100%;
+    width: 45%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .column {
-    width: 50%;
+    width: 100%;
   }
 }
 
