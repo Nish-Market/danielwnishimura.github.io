@@ -10,7 +10,6 @@
 /*This is where I set the background color and font that I wanted to use across my entire page*/
 body {
   font-family: tahoma;
-  background-color: #000000;
   margin: 0;
 }
 
@@ -30,7 +29,7 @@ header {
   border-color: #A67948;
 }
 
-/*This the icon bar that liks to my other pages*/
+/*This is the icon bar that liks to my other pages*/
 .icon-bar {
   width: 100%;
   background-color: #25553E;
@@ -55,13 +54,14 @@ header {
   background-color: #000000;
 }
 
-/*This is where I set the background color and font that I wanted to use across my entire page*/
+/*This is where I set the background color that I wanted to use across my entire page*/
 body {
   font-family: tahoma;
   background-color: #000000;
   margin: 0;
   text-align: center;
 }
+
 
 /*This is the layout for the main body content*/
 content {
@@ -70,6 +70,7 @@ content {
   text-align: center;
 }
 
+/*This is the formatting for my bio and photo*/
 .container {
   position: relative;
   color: white;
