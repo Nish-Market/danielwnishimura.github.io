@@ -48,14 +48,15 @@ header {
 /*This is where I set the background color that I wanted to use across my entire page*/
 body {
   font-family: tahoma;
-  background-color: #000000;
+  color: white;
   margin: 0;
   text-align: center;
+  background-color: black;
 }
 
 /*This is the layout for the main body content*/
 content {
-  color: #FFFFFF;
+  color: white;
   padding-left: 20px;
   text-align: center;
   padding: 10px;
@@ -127,6 +128,7 @@ img {
 .content {
   background-color: #84541F;
   padding: 10px;
+  color: white;
 }
 
 @media screen and (max-width: 900px) {
@@ -143,10 +145,10 @@ img {
 
 footer {
   text-align: center;
+  color: white;
   padding: 3px;
   background-color: #25553E;
   border-top-style: solid;
   border-width: 5px;
   border-color: #A67948;
-  color: white;
 }
