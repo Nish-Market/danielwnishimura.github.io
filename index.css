@@ -80,11 +80,11 @@ content {
 }
 
 img {
-  filter: drop-shadow(8px 8px 10px white);
   filter: opacity(30%);
   border-radius: 50%;
 }
 
+/*This scales the images based on screen size*/
 @media screen and (max-width: 700px) {
   img {
     width: 100%;
