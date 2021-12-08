@@ -1,0 +1,168 @@
+/*This is where I set the background color and font that I wanted to use across my entire page*/
+body {
+  font-family: tahoma;
+  margin: 0;
+}
+
+/*This is the layout for the header content*/
+header {
+  white-space: normal;
+  overflow: hidden;
+  font-size: 32px;
+  margin: 0px;
+  padding: 20px;
+  background-color: #25553E;
+  text-align: center;
+  line-height: 1;
+  color: white;
+  border-bottom-style: solid;
+  border-width: 15px;
+  border-color: #A67948;
+}
+
+/*This is the icon bar that liks to my other pages*/
+.icon-bar {
+  width: 100%;
+  background-color: #25553E;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #A67948;
+}
+
+.active {
+  background-color: #000000;
+}
+
+/*This is where I set the background color that I wanted to use across my entire page*/
+body {
+  font-family: tahoma;
+  color: white;
+  margin: 0;
+  text-align: center;
+  background-color: black;
+}
+
+/*This is the layout for the main body content*/
+content {
+  color: white;
+  padding-left: 20px;
+  text-align: center;
+  padding: 10px;
+}
+ 
+/*This is the formatting for my bio and photo*/
+.container {
+  position: relative;
+  color: white;
+}
+
+.center {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 20px;
+  max-width: 700px;
+  min-width: 700px;
+  padding: 10px;
+}
+
+img {
+  filter: opacity(30%);
+  border-radius: 50%;
+}
+
+/*This scales the images based on screen size*/
+@media screen and (max-width: 700px) {
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .center {
+    font-size: 14px;
+	max-width: 100%;
+	min-width: 100%;
+  }
+}
+
+/*This is the portfolio grid layout*/
+.main {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.row {
+  margin: auto;
+}
+
+.row,
+.row > .column {
+  padding: 15px;
+}
+
+.column {
+  float: left;
+  width: 30%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: #84541F;
+  padding: 10px;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*This is the layout for the footer content*/
+footer {
+  text-align: center;
+  color: white;
+  padding: 3px;
+  background-color: #25553E;
+  border-top-style: solid;
+  border-width: 5px;
+  border-color: #A67948;
+}
+
+/*This changes the validator links to a more visible color*/
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
